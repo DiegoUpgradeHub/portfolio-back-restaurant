@@ -27,9 +27,9 @@ app.use('/public', express.static('public'));
 
 app.use('/api', user)
 app.use('/api', products)
-app.use('/', (req, res, next) => {
-    res.send('Place the right endpoint to find the data. ;)');
-})
+// app.use('/', (req, res, next) => {
+//     res.send('Place the right endpoint to find the data. ;)');
+// })
 
 // Ruta al HTML. Útil para desplegar en Vercel
 app.get("/", (req, res) => {
