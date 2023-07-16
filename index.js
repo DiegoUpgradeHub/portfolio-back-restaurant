@@ -31,6 +31,14 @@ app.use('/', (req, res, next) => {
     res.send('Place the right endpoint to find the data. ;)');
 })
 
+// Ruta al HTML. Útil para desplegar en Vercel
+app.get("/", (req, res) => {
+    res.sendFile(__dirname + "/index.html");
+});
+
+// Ruta para añadir estilos con CSS
+app.use(express.static(__dirname + '/public'))
+
 // Definimos el puerto desde el dotenv y si no lo hubiera el 4000
 const port = process.env.PORT || 4000;
 const server = app.listen(port, () => {
