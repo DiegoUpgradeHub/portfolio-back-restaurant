@@ -7,7 +7,6 @@ const authorize = require("../utils/auth.middleware")
 const { check, validationResult } = require('express-validator');
 
 //Requerir modelos
-// const userSchema = require("../models/user.model");
 const userModel = require(`../models/user.model`);
 
 // Registrar usuario
@@ -34,7 +33,7 @@ router.post("/users/signup",
         }
         else {
             bcrypt.hash(req.body.password, 10).then((hash) => {
-                const user = new userSchema({
+                const user = new userModel({
                     name: req.body.name,
                     lastName: req.body.lastName,
                     email: req.body.email,
@@ -60,7 +59,7 @@ router.post("/users/signup",
 // Iniciar sesión
 router.post("/users/signin", (req, res, next) => {
     let getUser;
-    userSchema.findOne({
+    userModel.findOne({
         email: req.body.email
     }).then(user => {
         if (!user) {
