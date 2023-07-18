@@ -52,6 +52,27 @@ const products = [
         ingredients: "made with mostly pantry ingredients but includes hearty greens and a squeeze of lemon for bright, fresh flavor.",
         image: "https://mymoorishplate.com/wp-content/uploads/2019/03/Lentil-Soup-1-500x500.jpg",
         category: "main",
+    },
+    {
+        name: "cucumber tomato salad",
+        price: 13.50,
+        ingredients: "filled with cucumbers, cherry tomatoes, red onion, and feta, and tossed in a lemon pepper olive oil dressing.",
+        image: "https://www.thecookierookie.com/wp-content/uploads/2022/06/featured-cucumber-tomato-feta-salad-recipe.jpg",
+        category: "main",
+    },
+    {
+        name: "lasagna",
+        price: 13.50,
+        ingredients: "loaded with 7 vegetables, cheese mixture rich and creamy with spinach and ricotta.",
+        image: "https://chefsavvy.com/wp-content/uploads/vegetarian-lasagna-recipe.jpg",
+        category: "main",
+    },
+    {
+        name: "risotto",
+        price: 13.50,
+        ingredients: "lkale, green beans and zucchini and is topped with fried garlic for amazing aroma and flavor.",
+        image: "https://instantpoteats.com/wp-content/uploads/2019/10/instant-pot-vegan-risotto-4.jpg",
+        category: "main",
     }
 ];
 const productDocuments = products.map(product => new Product(product));
