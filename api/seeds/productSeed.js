@@ -40,10 +40,17 @@ const products = [
         category: "main",
     },
     {
-        name: "lentils burger",
+        name: "home burger",
         price: 13.50,
         ingredients: "fried zucchini slices, red onions, tomatoes, pickles and vegan cocktail sauce, served with wedges, ketchup & vegan mayo.",
-        image: "https://www.justonecookbook.com/wp-content/uploads/2020/02/Vegetarian-Curry-4400-II.jpg",
+        image: "https://images.eatsmarter.de/sites/default/files/styles/576x432/public/veganer-linsen-burger-655181.jpg",
+        category: "main",
+    },
+    {
+        name: "lentils soup",
+        price: 13.50,
+        ingredients: "made with mostly pantry ingredients but includes hearty greens and a squeeze of lemon for bright, fresh flavor.",
+        image: "https://mymoorishplate.com/wp-content/uploads/2019/03/Lentil-Soup-1-500x500.jpg",
         category: "main",
     }
 ];
